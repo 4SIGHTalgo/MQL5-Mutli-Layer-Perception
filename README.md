@@ -19,7 +19,8 @@ images/     Back‑test results
 ![MLP P/E](images/mlp_pe_graph.png)
 ![MLP Data](images/mlp_data_sheet.png)
 ![Correlation P/E](images/correlation_pe_graph.png)
-![Correlation Data](images/Unnamed.png)
+![Correlation Data]![unnamed](https://github.com/user-attachments/assets/d6139307-b190-4083-af29-9f244bc8bee2)
+
 
 The MLP approach trades all major currency crosses and therefore captures far more opportunities than the benchmark EA, which only trades a single predefined pair. In historical tests this resulted in larger net profits and more robust behaviour across different market regimes.
 
