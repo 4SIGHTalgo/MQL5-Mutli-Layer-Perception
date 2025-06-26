@@ -5,7 +5,12 @@ This repository demonstrates how neural networks can be used inside MetaTrader 5
 * **MLP_Stat_Arb.mq5** – a multi‑layer perceptron (MLP) approach that scans every major currency pair combination and scores potential trades.
 * **EA_Correlation.mq5** – a simple Pearson/Spearman correlation strategy that operates on a fixed symbol pair defined by the `SecSymbol` input.
 
-The MLP EA shows how to embed and parameterise a neural network directly in MQL5. The weights included in `experts/MLP_Stat_Arb.mq5` are **placeholders only**. The performance graphs in `images/` were generated using a fully trained network that was forward and genetically optimised to reduce overfitting.
+The MLP EA shows how to embed and parameterise a neural network directly in MQL5. The weights included in `experts/MLP_Stat_Arb.mq5` are **placeholders only**. The performance graphs in `images/` were generated using a fully trained network that was forward and genetically optimised to reduce overfitting. The weights shown in the file with in the repository does *not* have trained weights.
+
+While it is **technically possible** to deploy deeper, more exotic architectures (CNNs, LSTMs, Transformers) inside MQL5, doing so is *far from trivial*—you’ll wrestle with limited BLAS support, memory constraints per symbol, and the absence of unified tensor libraries.  
+
+That’s why a *lean, fully-connected MLP*—like the one illustrated here—often delivers a **surprisingly effective** accuracy/complexity trade-off for statistical-arbitrage tasks, compiling instantly and running in-terminal with minimal overhead.
+
 
 ## Repository Layout
 
